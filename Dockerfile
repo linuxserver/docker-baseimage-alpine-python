@@ -68,6 +68,7 @@ apk add --no-cache \
 	cherrypy \
 	configparser \
 	ndg-httpsclient \
+	notify \
 	paramiko \
 	pillow \
 	psutil \
