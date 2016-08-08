@@ -1,6 +1,10 @@
 FROM lsiobase/alpine
 MAINTAINER sparklyballs
 
+# package versions
+ARG PAR2_VER="v0.6.14"
+ARG YENC_VER="0.4.0"
+
 # install build dependencies
 RUN \
 apk add --no-cache --virtual=build-dependencies \
@@ -36,10 +40,10 @@ apk add --no-cache \
 	/tmp/yenc-source && \
  curl -o \
 	/tmp/par2.tar.gz -L \
-		https://github.com/Parchive/par2cmdline/archive/v0.6.13.tar.gz && \
+		"https://github.com/Parchive/par2cmdline/archive/${PAR2_VER}.tar.gz" && \
  curl -o \
 	/tmp/yenc.tar.gz -L \
-		http://www.golug.it/pub/yenc/yenc-0.4.0.tar.gz && \
+		"http://www.golug.it/pub/yenc/yenc-${YENC_VER}.tar.gz" && \
 
 # unpack source
  tar xvf /tmp/par2.tar.gz -C \
@@ -63,7 +67,8 @@ apk add --no-cache \
 # add pip packages
  pip install --no-cache-dir -U \
 	pip && \
- LIBRARY_PATH=/lib:/usr/lib pip install --no-cache-dir -U \
+ LIBRARY_PATH=/lib:/usr/lib \
+ pip install --no-cache-dir -U \
 	cheetah \
 	cherrypy \
 	configparser \
@@ -79,8 +84,11 @@ apk add --no-cache \
 	virtualenv && \
 
 # clean up
- apk del --purge build-dependencies && \
- rm -rfv /var/cache/apk/* /root/.cache /tmp/*
+ apk del --purge \
+	build-dependencies && \
+ rm -rf \
+	/root/.cache \
+	/tmp/*
 
 # install runtime dependencies
 RUN \
