@@ -1,7 +1,7 @@
 FROM lsiobase/alpine
 MAINTAINER sparklyballs
 
-# install runtime dependencies
+# install runtime packages
 RUN \
  apk add --no-cache \
 	curl \
@@ -26,7 +26,7 @@ RUN \
  apk add --no-cache --repository http://nl.alpinelinux.org/alpine/edge/testing \
 	vnstat && \
 
-# install build dependencies
+# install build packages
  apk add --no-cache --virtual=build-dependencies \
 	autoconf \
 	automake \
