@@ -6,9 +6,9 @@ ENV LANG C.UTF-8
 ENV PATH /usr/local/bin:$PATH
 
 # build time environment settings
-ENV LXML_VER 3.6.4
-ENV PYTHON_PIP_VERSION 8.1.2
-ENV PYTHON_VERSION 2.7.12
+ARG LXML_VER="3.6.4"
+ARG PYTHON_PIP_VERSION="9.0.1"
+ARG PYTHON_VERSION="2.7.12"
 
 # install ca-certificates
 RUN \
@@ -156,4 +156,3 @@ RUN \
  find /root -name . -o -prune -exec rm -rf -- {} + && \
  mkdir -p \
 	/root
-
