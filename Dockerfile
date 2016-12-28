@@ -1,4 +1,4 @@
-FROM lsiobase/alpine
+FROM lsiobase/alpine:3.5
 MAINTAINER sparklyballs
 
 # install runtime packages
@@ -12,9 +12,9 @@ RUN \
 	libwebp \
 	openjpeg \
 	p7zip \
-	py-lxml \
-	py-pip \
-	python \
+	py2-lxml \
+	py2-pip \
+	python2 \
 	tar \
 	tiff \
 	unrar \
@@ -42,7 +42,7 @@ RUN \
 	make \
 	openjpeg-dev \
 	openssl-dev \
-	python-dev \
+	python2-dev \
 	tiff-dev \
 	zlib-dev && \
 
