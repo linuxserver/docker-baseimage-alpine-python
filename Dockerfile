@@ -23,7 +23,7 @@ RUN \
 	xz \
 	zlib && \
 
- apk add --no-cache --repository http://nl.alpinelinux.org/alpine/edge/testing \
+ apk add --no-cache --repository http://nl.alpinelinux.org/alpine/edge/community \
 	vnstat && \
 
 # install build packages
