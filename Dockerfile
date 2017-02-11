@@ -11,6 +11,7 @@ RUN \
 	libjpeg-turbo \
 	libwebp \
 	openjpeg \
+	openssl \
 	p7zip \
 	py2-lxml \
 	py2-pip \
