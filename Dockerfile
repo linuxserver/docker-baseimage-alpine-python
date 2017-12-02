@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.6
+FROM lsiobase/alpine:3.7
 MAINTAINER sparklyballs
 
 # install build packages
@@ -34,6 +34,7 @@ RUN \
 	openssl \
 	p7zip \
 	py2-lxml \
+	py2-pynacl \
 	py2-pip \
 	python2 \
 	tar \
