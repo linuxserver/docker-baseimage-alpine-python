@@ -34,7 +34,6 @@ RUN \
 	openssl \
 	p7zip \
 	py2-lxml \
-	py2-pynacl \
 	py2-pip \
 	python2 \
 	tar \
@@ -45,6 +44,9 @@ RUN \
 	wget \
 	xz \
 	zlib && \
+ apk add --no-cache \
+	--repository http://nl.alpinelinux.org/alpine/edge/main \
+	py2-pynacl && \
 
 # add pip packages
  pip install --no-cache-dir -U \
