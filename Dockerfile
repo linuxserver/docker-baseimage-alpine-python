@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.6
+FROM lsiobase/alpine:3.7
 MAINTAINER sparklyballs
 
 # install build packages
@@ -44,6 +44,9 @@ RUN \
 	wget \
 	xz \
 	zlib && \
+ apk add --no-cache \
+	--repository http://nl.alpinelinux.org/alpine/edge/main \
+	py2-pynacl && \
 
 # add pip packages
  pip install --no-cache-dir -U \
