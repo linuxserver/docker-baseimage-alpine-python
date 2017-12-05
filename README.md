@@ -5,7 +5,7 @@
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
-[Dockerfile](https://github.com/linuxserver/docker-baseimage-alpine-python/blob/3.7/Dockerfile)
+[Dockerfile](https://github.com/linuxserver/docker-baseimage-alpine-python/blob/master/Dockerfile)
 
 [![](https://images.microbadger.com/badges/image/lsiobase/alpine.python.svg)](https://microbadger.com/images/lsiobase/alpine.python "Get your own image badge on microbadger.com")
 
