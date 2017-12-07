@@ -1,8 +1,10 @@
 FROM lsiobase/alpine:3.7
-MAINTAINER sparklyballs
 
-# install build packages
+# work around for hanging configure
+ARG CONFIG_SHELL=/bin/sh
+
 RUN \
+ echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
 	autoconf \
 	automake \
@@ -21,8 +23,7 @@ RUN \
 	python2-dev \
 	tiff-dev \
 	zlib-dev && \
-
-# install runtime packages
+ echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	curl \
 	freetype \
@@ -44,11 +45,7 @@ RUN \
 	wget \
 	xz \
 	zlib && \
- apk add --no-cache \
-	--repository http://nl.alpinelinux.org/alpine/edge/main \
-	py2-pynacl && \
-
-# add pip packages
+ echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
 	pip && \
  pip install --no-cache-dir -U \
@@ -64,8 +61,7 @@ RUN \
 	setuptools \
 	urllib3 \
 	virtualenv && \
-
-# clean up
+ echo "**** clean up ****" && \
  apk del --purge \
 	build-dependencies && \
  rm -rf \
