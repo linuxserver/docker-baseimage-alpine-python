@@ -1,5 +1,8 @@
 FROM lsiobase/alpine:3.7
 
+# set python to use utf-8 rather than ascii.
+ENV PYTHONIOENCODING="UTF-8"
+
 RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
