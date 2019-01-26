@@ -45,7 +45,7 @@ RUN \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
 	pip && \
- pip install --no-cache-dir -U \
+ pip install -U \
 	cheetah \
 	configparser \
 	ndg-httpsclient \
