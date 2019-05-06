@@ -23,7 +23,7 @@ libgcrypt-1.8.3-r0
 libgd-2.2.5-r3
 libgpg-error-1.30-r0
 libjpeg-turbo-1.5.3-r4
-libpng-1.6.34-r1
+libpng-1.6.37-r0
 libressl2.7-libcrypto-2.7.5-r0
 libressl2.7-libssl-2.7.5-r0
 libressl2.7-libtls-2.7.5-r0
