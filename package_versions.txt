@@ -13,7 +13,7 @@ git-2.18.1-r0
 lcms2-2.9-r1
 libacl-2.2.52-r5
 libattr-2.4.47-r7
-libbz2-1.0.6-r6
+libbz2-1.0.6-r7
 libc-utils-0.7.1-r0
 libcrypto1.0-1.0.2r-r0
 libcurl-7.61.1-r2
