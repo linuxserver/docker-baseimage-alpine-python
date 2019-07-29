@@ -19,7 +19,7 @@ libcrypto1.0-1.0.2r-r0
 libcurl-7.61.1-r2
 libffi-3.2.1-r4
 libgcc-6.4.0-r9
-libgcrypt-1.8.3-r0
+libgcrypt-1.8.3-r1
 libgd-2.2.5-r3
 libgpg-error-1.30-r0
 libjpeg-turbo-1.5.3-r5
@@ -51,7 +51,7 @@ python2-2.7.15-r2
 readline-7.0.003-r0
 scanelf-1.2.3-r0
 shadow-4.5-r0
-sqlite-libs-3.25.3-r0
+sqlite-libs-3.25.3-r1
 ssl_client-1.28.4-r3
 tar-1.32-r0
 tiff-4.0.10-r0
