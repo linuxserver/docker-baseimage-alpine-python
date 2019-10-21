@@ -25,7 +25,7 @@ libgd-2.2.5-r3
 libgpg-error-1.33-r0
 libjpeg-turbo-1.5.3-r5
 libpng-1.6.37-r0
-libssh2-1.8.2-r0
+libssh2-1.9.0-r0
 libssl1.1-1.1.1d-r0
 libstdc++-8.3.0-r0
 libtls-standalone-2.7.4-r6
@@ -54,7 +54,7 @@ sqlite-libs-3.28.0-r1
 ssl_client-1.29.3-r10
 tar-1.32-r0
 tiff-4.0.10-r1
-tzdata-2019b-r0
+tzdata-2019c-r0
 unrar-5.6.8-r0
 unzip-6.0-r4
 vnstat-1.18-r0
