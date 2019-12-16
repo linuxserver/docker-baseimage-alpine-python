@@ -9,7 +9,7 @@ curl-7.61.1-r3
 expat-2.2.8-r0
 freetype-2.9.1-r1
 gdbm-1.13-r1
-git-2.18.1-r0
+git-2.18.2-r0
 lcms2-2.9-r1
 libacl-2.2.52-r5
 libattr-2.4.47-r7
