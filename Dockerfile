@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.10
+FROM lsiobase/alpine:3.11
 
 RUN \
  echo "**** install build packages ****" && \
@@ -13,6 +13,8 @@ RUN \
 	libffi-dev \
 	libpng-dev \
 	libwebp-dev \
+	libxml2-dev \
+	libxslt-dev \
 	linux-headers \
 	make \
 	openjpeg-dev \
@@ -28,10 +30,11 @@ RUN \
 	lcms2 \
 	libjpeg-turbo \
 	libwebp \
+	libxml2 \
+	libxslt \
 	openjpeg \
 	openssl \
 	p7zip \
-	py2-lxml \
 	py2-pip \
 	python2 \
 	tar \
@@ -48,6 +51,7 @@ RUN \
  pip install -U \
 	cheetah \
 	configparser \
+	lxml \
 	ndg-httpsclient \
 	notify \
 	paramiko \
