@@ -23,7 +23,7 @@ libgcc-8.3.0-r0
 libgcrypt-1.8.5-r0
 libgd-2.2.5-r3
 libgpg-error-1.33-r0
-libjpeg-turbo-1.5.3-r5
+libjpeg-turbo-1.5.3-r6
 libpng-1.6.37-r0
 libssh2-1.9.0-r1
 libssl1.1-1.1.1d-r2
