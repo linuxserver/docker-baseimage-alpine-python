@@ -38,7 +38,7 @@ ncurses-libs-6.1_p20190518-r0
 ncurses-terminfo-6.1_p20190518-r0
 ncurses-terminfo-base-6.1_p20190518-r0
 nghttp2-libs-1.39.2-r0
-openjpeg-2.3.1-r0
+openjpeg-2.3.1-r3
 openssl-1.1.1d-r2
 p7zip-16.02-r3
 pcre2-10.33-r0
