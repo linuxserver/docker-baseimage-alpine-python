@@ -16,6 +16,10 @@ jobs:
             echo "**** Github secret PAUSE_PACKAGE_TRIGGER_BASEIMAGE_ALPINE_PYTHON_3_8 is set; skipping trigger. ****"
             exit 0
           fi
+          if [ $(curl -s https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-baseimage-alpine-python/job/3.8/lastBuild/api/json | jq -r '.building') == "true" ]; then
+            echo "**** There already seems to be an active build on Jenkins; skipping package trigger ****"
+            exit 0
+          fi
           echo "**** Package trigger running off of 3.8 branch. To disable, set a Github secret named \"PAUSE_PACKAGE_TRIGGER_BASEIMAGE_ALPINE_PYTHON_3_8\". ****"
           response=$(curl -iX POST \
             https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-baseimage-alpine-python/job/3.8/buildWithParameters?PACKAGE_CHECK=true \
