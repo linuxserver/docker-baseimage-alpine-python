@@ -37,7 +37,7 @@ musl-utils-1.1.22-r4
 ncurses-libs-6.1_p20190518-r2
 ncurses-terminfo-base-6.1_p20190518-r2
 nghttp2-libs-1.39.2-r1
-openjpeg-2.3.1-r5
+openjpeg-2.4.0-r0
 openssl-1.1.1j-r0
 p7zip-16.02-r3
 pcre2-10.33-r0
