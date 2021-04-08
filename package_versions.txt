@@ -1,8 +1,8 @@
 alpine-baselayout-3.1.2-r0
 alpine-keys-2.1-r2
-apk-tools-2.10.4-r2
+apk-tools-2.10.4-r4
 bash-5.0.0-r0
-busybox-1.30.1-r4
+busybox-1.30.1-r5
 ca-certificates-20191127-r2
 ca-certificates-cacert-20191127-r2
 coreutils-8.31-r0
@@ -49,8 +49,8 @@ readline-8.0.0-r0
 scanelf-1.2.3-r0
 shadow-4.6-r2
 sqlite-libs-3.28.0-r3
-ssl_client-1.30.1-r4
-tar-1.32-r0
+ssl_client-1.30.1-r5
+tar-1.32-r1
 tiff-4.0.10-r3
 tzdata-2021a-r0
 unrar-5.7.5-r0
