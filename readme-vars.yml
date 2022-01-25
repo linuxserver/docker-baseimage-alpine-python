@@ -3,6 +3,12 @@
 
 # project information
 project_name: baseimage-alpine-python
+
+project_deprecation_status: true
+project_deprecation_message: |
+  We recommend our standard alpine baseimage instead:
+  https://github.com/linuxserver/docker-baseimage-alpine
+  
 full_custom_readme: |
   {% raw -%}
   [linuxserverurl]: https://linuxserver.io
